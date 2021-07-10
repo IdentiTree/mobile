@@ -25,6 +25,7 @@ const Areas: React.FC = () => {
         <IonContent>
           {AREAS.map(area => (
             <Area
+              key={area.did}
               did={area.did}
               name={area.name}
               type={area.type.name}
