@@ -1,0 +1,29 @@
+.kpi-card {
+  background: var(--ion-color-light);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.value-wrapper {
+  display: flex;
+}
+
+.icon {
+  margin-right: 12px;
+}
+
+.kpi-card h6,
+.kpi-card h5 {
+  margin: 0;
+}
+
+.kpi-card h6 {
+  margin-bottom: 4px;
+}
+
+.kpi-card h5 {
+  margin-right: 4px;
+}

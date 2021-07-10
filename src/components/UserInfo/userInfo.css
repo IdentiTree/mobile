@@ -1,0 +1,18 @@
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  min-width: 64px;
+}
+
+h5 {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 4px;
+}
