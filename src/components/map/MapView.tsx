@@ -1,7 +1,7 @@
 import React from 'react';
 import Map from './Map';
 
-import { useIonViewWillEnter, useIonLoading, IonButton, IonLoading } from "@ionic/react";
+import { useIonViewWillEnter, useIonLoading, IonButton, IonLoading, IonItem, IonLabel  } from "@ionic/react";
 
 
 const MapView = function () {
@@ -12,8 +12,6 @@ const MapView = function () {
 
   const [showLoading, setShowLoading] = React.useState(true);
 
-  setTimeout(() => {
-  }, 1000);
   useIonViewWillEnter(() => {
     setShowLoading(false);
     isLoading(false);
@@ -30,12 +28,10 @@ const MapView = function () {
         message={'Please wait...'}
         duration={5000}
       />
-      <IonButton
-        expand="block"
-        onClick={() => present('Loading', 2000, 'dots')}
-      >
-        Show Loading using params
-      </IonButton>
+
+      <IonItem routerLink="/trees/new">
+            <IonLabel>Add new tree</IonLabel>
+      </IonItem>
       {loaded ? (
         <p>loading</p>
       ) : (

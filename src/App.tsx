@@ -37,6 +37,7 @@ import Market from './pages/Market';
 
 import { AREAS } from './mocks/areas';
 import { Area } from './pages/Area';
+import NewTree from './pages/NewTree';
 
 const App: React.FC = () => (
   <IonApp>
@@ -51,6 +52,9 @@ const App: React.FC = () => (
           </Route>
           <Route path="/market">
             <Market />
+          </Route>
+          <Route path="/trees/new">
+            <NewTree />
           </Route>
           <Route exact path="/">
             <Redirect to="/areas" />

@@ -1,5 +1,7 @@
 {
   "name": "trees-mobile",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }
