@@ -5,10 +5,21 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
+import { useEffect } from 'react';
 import { Area } from '../components/Area/Area';
+import { useIdentity } from '../hooks/useIdentity';
 import { AREAS } from '../mocks/areas';
 
 const Areas: React.FC = () => {
+
+  const {keyPair, didDocument, generateDid} = useIdentity();
+
+  useEffect(() => {
+    if (!keyPair) {
+      generateDid();
+    }  
+  })
+
   return (
     <IonPage>
       <IonHeader>
